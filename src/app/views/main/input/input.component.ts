@@ -14,9 +14,11 @@ export class InputComponent implements OnInit {
 
   ngOnInit(): void {
   }
-  onChange(searchString: string) {
+  onChange(searchString: string): void {
     if (searchString.length > 3) {
       this.searchService.search(searchString);
+    } else {
+      this.searchService.reset();
     }
   }
 }

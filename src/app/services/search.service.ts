@@ -6,20 +6,29 @@ import { DataService } from './data.service';
   providedIn: 'root'
 })
 export class SearchService {
-  public datamodified: Data[];
+  public mutableDataArray: Data[];
+
   constructor(private dataService: DataService) {
-    this.datamodified = [...dataService.data];
+    this.mutableDataArray = [...dataService.data];
   }
 
-  stringToLower(string: string): string {
-    return string.toLowerCase();
+
+  search(searchString: string): void {
+    this.modifyArray(searchString.toLowerCase());
   }
 
-  search(data: string) {
-    //todo
-  }
-  
+
   getData(): Data[] {
-    return this.datamodified;
+    return this.mutableDataArray;
+  }
+
+  modifyArray(searchString: string): void {
+    this.mutableDataArray = this.mutableDataArray.filter(dataobject => dataobject.Firstname.includes(searchString));
+    console.log(this.mutableDataArray);
+
+  }
+
+  reset(): void {
+    this.mutableDataArray = [...this.dataService.data];
   }
 }
