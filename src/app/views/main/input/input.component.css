@@ -1,0 +1,18 @@
+.input-container{
+    border: 1px solid rgba(102, 102, 102, 0.493);
+    width: 40%;
+    display: flex;
+    border-radius: 5px;
+    overflow:hidden ;
+}
+.icon{
+    padding: 6px;
+}
+input{
+    border: none;
+    padding: 6px;
+    flex-grow: 1;
+}
+input:focus{
+outline: none;
+}
