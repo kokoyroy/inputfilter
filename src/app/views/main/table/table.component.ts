@@ -11,12 +11,14 @@ import { SearchService } from 'src/app/services/search.service';
 export class TableComponent implements OnInit {
   tableHeaders: string[];
   dataArray: Data[];
+  
+  
   constructor(
-    private data: DataService,
-    private searchService:SearchService
-    ) {
-    this.tableHeaders = Object.keys(data.data[0]);
-    this.dataArray = searchService.getData();
+    private dataService: DataService,
+    private searchService: SearchService
+  ) {
+    this.tableHeaders = Object.keys(this.dataService.data[0]);
+    this.dataArray = this.searchService.getData();
   }
 
   ngOnInit(): void {

@@ -1,3 +1,21 @@
-.app{
+.app {
     height: 100vh;
+    position: relative;
+}
+.picachu {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    height: 250px;
+    width: 30vw;
+    /* width: 200px; */
+    background-image: url("../assets/picachu.jpg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    opacity: 0.2;
+    transition: opacity 0.5s ease-in-out;
+}
+.picachu:hover {
+    opacity: 1;
 }

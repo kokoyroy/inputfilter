@@ -16,8 +16,9 @@ export class SearchService {
   }
 
   search(data: string) {
-
+    //todo
   }
+  
   getData(): Data[] {
     return this.datamodified;
   }
