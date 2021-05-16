@@ -1,4 +1,4 @@
 <div class="input-container">
 <img src="../../../../assets/icons-navigation-search.svg" alt="search" class="icon">
-    <input type="text" id="search-field" class="input">
+    <input type="text" id="search-field" (keyup)="onChange($event.target.value)" class="input">
 </div>

@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { SearchService } from 'src/app/services/search.service';
 
 @Component({
   selector: 'app-input',
@@ -7,9 +8,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class InputComponent implements OnInit {
 
-  constructor() { }
+  constructor(
+    private searchService: SearchService
+  ) { }
 
   ngOnInit(): void {
   }
-
+  onChange(searchString: string) {
+    if (searchString.length > 3) {
+      this.searchService.search(searchString);
+    }
+  }
 }

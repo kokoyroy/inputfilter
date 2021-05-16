@@ -1,1 +1,17 @@
-<p>table works!</p>
+<table class="table table-striped">
+    <thead class="bg-success">
+        <tr>
+            <th *ngFor="let header of tableHeaders">{{header}}</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let data of dataArray">
+            <td>{{data.Active}}</td>
+            <td>{{data.Firstname}}</td>
+            <td>{{data.Lastname}}</td>
+            <td>{{data.jobTitle}}</td>
+            <td>{{data.birthDate}}</td>
+            <td>{{data.dataCreated}}</td>
+        </tr>
+    </tbody>
+</table>

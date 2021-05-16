@@ -1,9 +1,65 @@
 import { Injectable } from '@angular/core';
+import { Data } from '../models/data';
 
 @Injectable({
   providedIn: 'root'
 })
 export class DataService {
+ public data: Data[];
 
-  constructor() { }
+
+  constructor() {
+    this.data = [{
+      Active: true,
+      Firstname: 'giannis',
+      Lastname: 'parios',
+      birthDate: 'mia imerominia',
+      jobTitle: 'tragoudiaris',
+      dataCreated: 'mia alli imerominia'
+    },
+    {
+      Active: true,
+      Firstname: 'magda',
+      Lastname: 'sxina',
+      birthDate: 'mia imerominia',
+      jobTitle: 'tragoudiara',
+      dataCreated: 'mia alli imerominia'
+    },
+    {
+      Active: true,
+      Firstname: 'kostas',
+      Lastname: 'mazonakis',
+      birthDate: 'mia imerominia',
+      jobTitle: 'tragoudiaris',
+      dataCreated: 'mia alli imerominia'
+    },
+    {
+      Active: true,
+      Firstname: 'giannis',
+      Lastname: 'parios',
+      birthDate: 'mia imerominia',
+      jobTitle: 'tragoudiaris',
+      dataCreated: 'mia alli imerominia'
+    },
+    {
+      Active: true,
+      Firstname: 'giannis',
+      Lastname: 'parios',
+      birthDate: 'mia imerominia',
+      jobTitle: 'tragoudiaris',
+      dataCreated: 'mia alli imerominia'
+    },
+    {
+      Active: true,
+      Firstname: 'giannis',
+      Lastname: 'parios',
+      birthDate: 'mia imerominia',
+      jobTitle: 'tragoudiaris',
+      dataCreated: 'mia alli imerominia'
+    }];
+  }
+
+
+
+
 }

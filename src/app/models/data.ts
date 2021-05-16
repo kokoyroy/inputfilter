@@ -3,6 +3,6 @@ export interface Data {
     Firstname: string;
     Lastname: string;
     jobTitle: string;
-    birthDate: Date;
-    dataCreated: Date;
+    birthDate: string;
+    dataCreated: string;
 }
