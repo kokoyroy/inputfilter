@@ -15,7 +15,7 @@ export class DataService {
       Lastname: 'parios',
       birthDate: 'mia imerominia',
       jobTitle: 'tragoudiaris',
-      dataCreated: 'mia alli imerominia'
+      dateCreated: 'mia alli imerominia'
     },
     {
       Active: true,
@@ -23,7 +23,7 @@ export class DataService {
       Lastname: 'sxina',
       birthDate: 'mia imerominia',
       jobTitle: 'tragoudiara',
-      dataCreated: 'mia alli imerominia'
+      dateCreated: 'mia alli imerominia'
     },
     {
       Active: true,
@@ -31,7 +31,7 @@ export class DataService {
       Lastname: 'mazonakis',
       birthDate: 'mia imerominia',
       jobTitle: 'tragoudiaris',
-      dataCreated: 'mia alli imerominia'
+      dateCreated: 'mia alli imerominia'
     },
     {
       Active: true,
@@ -39,7 +39,7 @@ export class DataService {
       Lastname: 'parios',
       birthDate: 'mia imerominia',
       jobTitle: 'tragoudiaris',
-      dataCreated: 'mia alli imerominia'
+      dateCreated: 'mia alli imerominia'
     },
     {
       Active: true,
@@ -47,7 +47,7 @@ export class DataService {
       Lastname: 'parios',
       birthDate: 'mia imerominia',
       jobTitle: 'tragoudiaris',
-      dataCreated: 'mia alli imerominia'
+      dateCreated: 'mia alli imerominia'
     },
     {
       Active: true,
@@ -55,7 +55,7 @@ export class DataService {
       Lastname: 'parios',
       birthDate: 'mia imerominia',
       jobTitle: 'tragoudiaris',
-      dataCreated: 'mia alli imerominia'
+      dateCreated: 'mia alli imerominia'
     }];
   }
 

@@ -4,5 +4,5 @@ export interface Data {
     Lastname: string;
     jobTitle: string;
     birthDate: string;
-    dataCreated: string;
+    dateCreated: string;
 }
