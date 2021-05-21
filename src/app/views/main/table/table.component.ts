@@ -18,13 +18,20 @@ export class TableComponent implements OnInit, DoCheck {
     private searchService: SearchService
   ) {
     this.tableHeaders = Object.keys(this.dataService.data[0]);
-    this.dataArray = this.searchService.mutableDataArray;
+    // this.dataArray = this.searchService.mutableDataArray;
   }
 
   ngOnInit(): void {
+    this.searchService.getData().subscribe(data => {
+      console.log(data);
+      this.dataArray = [];
+      this.dataArray = data;
+    });
   }
 
   ngDoCheck(): void {
-    this.dataArray = this.searchService.getData();
+    // this.dataArray = this.searchService.getData();
   }
+
+
 }
